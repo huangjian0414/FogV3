@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "FogV3"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "FogV3.sdk"
 
   # This description is used to generate tags and improve search results.
@@ -78,7 +78,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/huangjian0414/FogV3.git", :tag => "1.0.1" }
+  s.source       = { :git => "https://github.com/huangjian0414/FogV3.git", :tag => "1.0.2" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -92,7 +92,8 @@ Pod::Spec.new do |s|
  s.source_files = 'FogV3/FogV3.framework/Headers/*.{h}'
   #s.exclude_files = "Classes/Exclude"
 
-  # s.public_header_files = "Classes/**/*.h"
+  s.vendored_frameworks = 'FogV3/FogV3.framework'
+   s.public_header_files = 'FogV3/FogV3.framework/Headers/FogV3.h'
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
